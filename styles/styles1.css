@@ -1,0 +1,9 @@
+body {
+    background-color: antiquewhite;
+}
+
+.qr {
+    width: 20%;
+    height: 20%;
+    padding: 100px;
+}

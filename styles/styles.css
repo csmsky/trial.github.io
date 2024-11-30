@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    cursor: url('../images/cursors.png'), auto;
+    background-image: url('../images/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+.countdown-container {
+    text-align: center;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.title {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #fbff00;
+}
+
+.timer {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.time-segment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.number {
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.label {
+    margin-top: 5px;
+    font-size: 25px;
+    color: #ddd;
+}
+
+.locked {
+    margin-top: 20px;
+    margin-right: 190px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #fbff00;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-weight: bold;
+    animation: wiggle 2s linear infinite;
+}
+
+.locked:hover {
+    cursor: url('../images/cursors.png') 10 10, auto;
+    height: 5;
+    background: #d800e0;
+    animation: wiggle 2s linear infinite;
+}
+
+@keyframes wiggle {
+
+    0%,
+    7% {
+        transform: rotateZ(0);
+    }
+
+    15% {
+        transform: rotateZ(-15deg);
+    }
+
+    20% {
+        transform: rotateZ(10deg);
+    }
+
+    25% {
+        transform: rotateZ(-10deg);
+    }
+
+    30% {
+        transform: rotateZ(6deg);
+    }
+
+    35% {
+        transform: rotateZ(-4deg);
+    }
+
+    40%,
+    100% {
+        transform: rotateZ(0);
+    }
+}
+
+.custom-cursor {
+    position: absolute;
+    height: 5%;
+    width: 5%;
+    background-image: url('../images/cursors.png');
+    background-size: cover;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.container {
+    margin-left: 65px;
+    margin-top: 213px;
+}
+
+.button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #fbff00;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-weight: bold;
+    animation: wiggle 2s linear infinite;
+
+}
+
+#noBtn {
+    position: absolute;
+    transition: left 0.5s, top 0.5s;
+}

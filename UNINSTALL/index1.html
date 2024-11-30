@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>...</title>
+    <link rel="stylesheet" href="../styles/styles1.css">
+    <link rel="icon" type="image/x-icon" href="../images/icon.ico">
+</head>
+
+<style>
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/fontawesome.min.css');
+
+    body {
+        font-family: 'New Century Schoolbook';
+        font-size: 17px;
+        line-height: 1.5;
+        background-color: #ffff;
+        background-image: url('../images/bg1.jpg');
+        background-attachment: fixed;
+        background-position: center;
+        background-size: 100% 100%;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        justify-content: center;
+    }
+
+    .box {
+        padding: 60px 60px;
+        width: 50%;
+        height: 10%;
+        color: white;
+        text-align: center;
+        margin: 15vh auto;
+        position: relative;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(100px);
+        border-radius: 50px;
+    }
+
+    .box h3 {
+        font-size: 30px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 5px;
+    }
+
+    .top-border:before {
+        content: '';
+        width: 71px;
+        height: 71px;
+        position: absolute;
+        background: url('../images/pattern.png');
+        top: 20px;
+        left: 20px;
+        background-size: cover;
+    }
+
+    .top-border:after {
+        content: '';
+        width: 71px;
+        height: 71px;
+        position: absolute;
+        background: url('../images/pattern.png');
+        top: 20px;
+        right: 20px;
+        transform: rotate(90deg);
+        background-size: cover;
+    }
+
+    .bottom-border:before {
+        content: '';
+        width: 71px;
+        height: 71px;
+        position: absolute;
+        background: url('../images/pattern.png');
+        background-size: cover;
+        bottom: 20px;
+        left: 20px;
+        transform: rotate(270deg);
+    }
+
+    .bottom-border:after {
+        content: '';
+        width: 71px;
+        height: 71px;
+        position: absolute;
+        background: url('../images/pattern.png');
+        bottom: 20px;
+        right: 20px;
+        transform: rotate(180deg);
+        background-size: cover;
+    }
+
+    .box img {
+        width: 100px;
+    }
+
+    .love {
+        animation: pulse 1s ease infinite;
+        display: inline-block;
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.3);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div class="box">
+            <div class="top-border"></div>
+            <img src="../images/one.png" class="flower">
+            <h3>Gela <span class="love">💜</span> Ken</h3>
+            <p>Happy Anniversary, Babb! First of all, thank you for everything, especially for being by my side since
+                our day one. Every moment we've shared together is worth thanking God for. I never took you for granted,
+                never will. Be able to give 100% effort in everything between us, I vow. Whenever negativity is circling
+                quietly and doubts creeping up slowly, Love between us always manages to overcome and get loud. Forever
+                grateful for you, an emobidment of a blessing shaded in blue.</p>
+
+            <p>Many says that Good Karma is something that is good, elegant, loving, and amiable. I never believed in
+                such things until it happened to me. I always strive for the greatness in me and proving myself wrong of
+                any doubts I laid into the table myself. In the process of improving is when I met a Good, Elegant,
+                Loving, and Amiable—my Good Karma, you. </p>
+
+            <p>There is a lot more for us to uncover, the reality of living and the fantasies of our heavenly dreams.
+                We've built something that cannot be torn, with love and trust serving as its foundation. I thank God
+                for you, sending a person to brige the gaps of my old self to something new. I thank you, for allowing
+                the curiousity and vulnerability of your heart to me. It was never easy to say the least, but it was
+                never something that I peeved. May we never lose the battle of our lives and may we continue to pursue
+                our dreams together 'till the end of times. My treasure beyond measure.</p>
+            <div class="bottom-border"></div>
+        </div>
+</body>
